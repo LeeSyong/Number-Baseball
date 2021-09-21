@@ -1,6 +1,6 @@
 'use strict';
 
-// 게임 시작 버튼 - 랜덤한 세 자리 숫자 (보이지 않게)
+// 1. 게임 시작 버튼 - 랜덤한 세 자리 숫자 (보이지 않게)
 const start = document.querySelector('.box-start');
 const hidden = document.querySelector('.hidden');
 
@@ -13,9 +13,10 @@ start.addEventListener('click', function () {
   hidden.innerText = randomString;
 });
 
-// 엔터 키 - 세 자리 숫자 x, 경고 창
-// 엔터 키 - '랜덤 숫자' vs '입력 값' 비교, 볼/스트라이크 출력
-// 사용자가 10회까지 시도할 수 있도록 제한
+// 2. 엔터 키 - 세 자리 숫자 x, 경고 창
+// 3. 엔터 키 - '랜덤 숫자' vs '입력 값' 비교, 볼/스트라이크 출력
+// 4. 사용자가 10회까지 시도할 수 있도록 제한
+// 6. 세 자리 숫자 입력 시에만 10회에 포함되도록
 const enter = document.querySelector('.box-field-enter');
 const userString = document.querySelector('#box-field-input');
 const result = document.querySelector('.box-result');
@@ -105,7 +106,7 @@ enter.addEventListener('click', function clickEnter () {
   }
 });
 
-// 게임 재시작 버튼
+// 5. 게임 재시작 버튼
 const restart = document.querySelector('.box-restart');
 
 restart.addEventListener('click', function () {
